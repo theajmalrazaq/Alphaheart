@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Product Sans";
+    font-style: normal;
+    src: local("Open Sans"), local("OpenSans"),
+      url(https://fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2)
+        format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Recoleta";
+    src: url("Recoleta-Regular.woff2") format("woff2");
+    font-style: normal;
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #191919;
+    color: #8f73ee;
+    height: 100vh;
+    font-family: Product Sans;
+    overflow: hidden;
+    
+}
+header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 999;
+    font-size: 30px;
+    color: white;
+}
+.tagline{
+    color: #8f73ee;
+margin-top: 10px;
+text-align: center;
+line-height: 25px;
+}
+.vertical{
+    height: 10px;
+    width: 100%;
+    background-color: #2e2b37;
+    position: relative;
+    top: 106px;
+}
+.box{
+    width: 300px;
+    height: 120px;
+    background-color: #212121;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    border-radius: 16px;
+}
+.screan {
+    font-size: 100px;
+	position: relative;
+	top: 40px;
+}
+.area{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#userinput{
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+border-radius: 89px;
+outline: none;
+border: none;
+text-align: center;
+}
+
+#check{
+    margin-top: 10px;
+    background-color: #6453ff;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+#again{
+    margin-top: 10px;
+    background-color: #e11d48;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+#score{
+    font-weight: bolder;
+    font-size: 100px;
+}
+.scoreText{
+    margin-top: 10px;
+    color: white;
+}
+#message{
+    text-align: center;
+    position: relative;
+	top: 30px;
+
+}
+#again__text{
+    margin-top: 20px;
+    color: #d11e48;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
