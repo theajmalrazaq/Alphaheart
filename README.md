@@ -1,4 +1,4 @@
-# Heart Emoji Guessing Game
+# AlphaHeart (Heart Emoji Guessing Game)
 
 This project is a fun and interactive game that challenges players to guess the correct heart emoji from a set of options. The game is designed to be both entertaining and educational, as it helps players learn the different meanings behind different heart emojis.
 
