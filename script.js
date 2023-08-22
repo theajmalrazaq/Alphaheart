@@ -57,7 +57,7 @@ function search() {
   let value = document.getElementById("userinput").value;
 
   //  check if input have value or empty
-  if (value !== "") {
+  if (value == "") {
     document.getElementById("message").textContent = "Put a heart in box 😒";
   }
 
