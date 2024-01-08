@@ -102,7 +102,7 @@ h1 {
   outline: none;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-
+    color: white;
   text-align: center;
 }
 .area__2 {
