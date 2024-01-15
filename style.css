@@ -65,6 +65,7 @@ h1{
 #gametablebtns{
   display: flex;
   flex-direction: column;
+  border-radius: 9px;
   gap: 20px;
 }
 ul{
@@ -90,9 +91,9 @@ li:hover{
   gap: 20px;
 }
 #score,#hiscore{
-  color: #bbcaff;
+  color: #ffffff;
   font-family: 'Press Start 2P', system-ui;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .inst {
@@ -104,12 +105,12 @@ li:hover{
   text-align: center;
 }
 
-#play,#inst,#again {
+#play,#again {
   margin-top: 10px;
   background-color: #0038FF;
   border: none;
   color: rgb(255, 255, 255);
-  padding: 10px 30px;
+  padding: 20px 20px;
   box-shadow: 4px 3px 0px #ffffff;
   cursor: pointer;
   font-family: 'Press Start 2P', system-ui;

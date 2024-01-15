@@ -25,16 +25,7 @@ select.scoreboard.style.display="";
 
 function clickcheck(btnnum,choice)
 {
-if(score==0){
-  select.message.innerHTML="Game Over!! You Lose";
-  select.gametablebtns.style.display="none";
-  select.again.style.display = "";
-  if(score>hiscore){
-    hiscore = score;
-  }
-  select.hiscore.innerHTML="HiScore: "+ hiscore;
-}
-else if(btnnum!= guess)
+if(btnnum!= guess)
 {
 score--;
 select.score.innerHTML = "Score: " + score;
@@ -44,6 +35,15 @@ select.message.innerHTML = "Wrong Guess Try Again"
 else{
   select.selection.innerHTML = choice;
   select.message.innerHTML="Correct Guess!! You Win"
+  select.gametablebtns.style.display="none";
+  select.again.style.display = "";
+  if(score>hiscore){
+    hiscore = score;
+  }
+  select.hiscore.innerHTML="HiScore: "+ hiscore;
+}
+if(score==0){
+  select.message.innerHTML="Game Over!! You Lose";
   select.gametablebtns.style.display="none";
   select.again.style.display = "";
   if(score>hiscore){
