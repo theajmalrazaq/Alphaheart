@@ -24,7 +24,7 @@ header {
 h1{
   color: #ffffff;
   font-family: 'Press Start 2P', system-ui;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 100;
 }
 
@@ -85,14 +85,12 @@ li:hover{
   display: flex;
   gap: 20px;
 }
-#score{
-  color: #0038FF;
+#score,#hiscore{
+  color: #bbcaff;
   font-family: 'Press Start 2P', system-ui;
+  font-size: 10px;
 }
-#hiscore{
-  color: #0038FF;
-  font-family: 'Press Start 2P', system-ui;
-} 
+
 .inst {
   display: flex;
   justify-content: center;
