@@ -1,31 +1,18 @@
-@font-face {
-  font-family: "Product Sans";
-  font-style: normal;
-  src: local("Open Sans"), local("OpenSans"),
-    url(https://fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2)
-      format("woff2");
-}
-
-@font-face {
-  font-family: "lemon-milk";
-  src: url("fonts/LEMONMILK-Medium.woff2") format("woff2");
-  font-style: normal;
-}
-@font-face {
-  font-family: "Giselle";
-  src: url("fonts/Giselle.woff2") format("woff2");
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  background: #0f0f0f;
+  background: #000000;
   color: white;
   height: 100vh;
   font-family: Product Sans;
+  background-repeat: no-repeat;
+  background-image: url("overlay.png");
+
   overflow: hidden;
 }
 header {
@@ -33,45 +20,81 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin-top: 80px;
 }
-h1 {
-  text-transform: uppercase;
-  font-weight: 999;
-  font-size: 30px;
-  color: white;
-  font-family: "lemon-milk";
-  letter-spacing: 2px;
-}
-.slogan {
-  color: #747474;
-}
-.tagline {
-  color: #dbee00;
-  margin-top: 10px;
-  text-align: center;
-  line-height: 25px;
-}
-.vertical {
-  height: 10px;
-  width: 100%;
-  background-color: #2e2b37;
-  position: relative;
-  top: 106px;
+h1{
+  color: #ffffff;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 54px;
+  font-weight: 100;
 }
 
-.screan {
-  font-size: 100px;
-  position: relative;
-  top: 40px;
-}
-.area {
-  margin-top: 70px;
+#lower{
+  margin: 40px;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+.dlogo{
+  height: 100px;
+}
+#menu{
+  gap: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 40px;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+#gametable{
+ display: flex;
+ padding: 30px;
+ border-radius: 16px;
+ margin-top: 30px;
+ flex-direction: column;
+ justify-content:center;
+ gap: 20px;
+ align-items: center;
+}
+#gametablebtns{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+li{
+ background-color: rgba(255, 255, 255, .1);
+ backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 20px;
+}
+li:hover{
+  opacity: .4;
+}
+
+#scoresec{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+#score{
+  color: #0038FF;
+  font-family: 'Press Start 2P', system-ui;
+}
+#hiscore{
+  color: #0038FF;
+  font-family: 'Press Start 2P', system-ui;
+} 
 .inst {
   display: flex;
   justify-content: center;
@@ -80,97 +103,27 @@ h1 {
   font-size: 14px;
   text-align: center;
 }
-.exp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 14px;
-  text-align: center;
+
+#play,#inst,#again {
+  margin-top: 10px;
+  background-color: #0038FF;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  box-shadow: 4px 3px 0px #ffffff;
+  cursor: pointer;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 12px;
 }
-.area__1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-#userinput {
-  margin-top: 30px;
-  width: 180px;
-  height: 50px;
-  border-radius: 9px;
-  outline: none;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-    color: white;
-  text-align: center;
-}
-.area__2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#play:hover,#inst:hover ,#again:hover{
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
-#check {
-  margin-top: 10px;
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 10px 30px;
-  box-shadow: 4px 3px 0px #f890f9;
-  cursor: pointer;
-  font-family: "Giselle";
-  font-size: 20px;
+#selection{
+  font-size: 64px;
 }
-#check:hover {
-  transform: scale(0.95);
-  cursor: pointer;
-}
-#again {
-  margin-top: 10px;
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 10px 30px;
-  box-shadow: 4px 3px 0px #f890f9;
-  cursor: pointer;
-  font-family: "Giselle";
-  font-size: 20px;
-}
-#again:hover {
-  transform: scale(0.95);
-  cursor: pointer;
-}
-#score {
-  font-weight: bolder;
-  font-size: 100px;
-  font-family: "Giselle";
-  text-shadow: 4px 3px 0px #f890f9;
-}
-#highscore {
-  font-family: "Giselle";
-  font-size: 23px;
-  text-shadow: 1px 1px 3px #f890f9;
-}
-.scoreText {
-  margin-top: 10px;
-  color: white;
-  font-family: "Giselle";
-  font-size: 25px;
-}
-#message {
-  text-align: center;
-  position: relative;
-  top: 30px;
-  color: pink;
-}
-#again__text {
-  margin-top: 20px;
-  color: #d11e48;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+#message{
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 12px;
 }
