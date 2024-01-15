@@ -25,7 +25,16 @@ select.scoreboard.style.display="";
 
 function clickcheck(btnnum,choice)
 {
-if(btnnum!= guess)
+if(score==0){
+  select.message.innerHTML="Game Over!! You Lose";
+  select.gametablebtns.style.display="none";
+  select.again.style.display = "";
+  if(score>hiscore){
+    hiscore = score;
+  }
+  select.hiscore.innerHTML="HiScore: "+ hiscore;
+}
+else if(btnnum!= guess)
 {
 score--;
 select.score.innerHTML = "Score: " + score;
