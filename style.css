@@ -12,7 +12,6 @@ body {
   font-family: Product Sans;
   background-repeat: no-repeat;
   background-image: url("overlay.png");
-
   overflow: hidden;
 }
 header {
@@ -25,7 +24,7 @@ header {
 h1{
   color: #ffffff;
   font-family: 'Press Start 2P', system-ui;
-  font-size: 54px;
+  font-size: 34px;
   font-weight: 100;
 }
 
