@@ -29,7 +29,6 @@ h1{
 }
 
 #lower{
-  margin: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
