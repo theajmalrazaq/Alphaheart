@@ -13,8 +13,6 @@ body {
   background: #000000;
   color: white;
   height: 100vh;
-  font-family: Product Sans;
-  
   background-repeat: no-repeat;
   background-image: url("overlay.png");
   overflow-x: hidden;
