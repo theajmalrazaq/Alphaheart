@@ -12,6 +12,7 @@ const select = {
   gametablebtns: document.getElementById("gametablebtns"),
   logo: document.getElementById("logo"),
 }
+
 let score = 9;
 let win = false;
 let guess = Math.floor(Math.random()*9);
@@ -48,10 +49,7 @@ if(score==0){
   select.message.innerHTML="Game Over!! You Lose";
   select.gametablebtns.style.display="none";
   select.again.style.display = "";
-  if(score>hiscore){
-    hiscore = score;
-  }
-  select.hiscore.innerHTML="HiScore: "+ hiscore;
+  select.selection.innerHTML="😂";
 }
 }
 select.again.addEventListener("click",()=>{

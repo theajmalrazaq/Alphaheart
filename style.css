@@ -99,14 +99,6 @@ li:hover{
   font-size: 13px;
 }
 
-.inst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 14px;
-  text-align: center;
-}
 
 #again {
   margin-top: 10px;
@@ -129,14 +121,15 @@ li:hover{
   font-family: 'Press Start 2P', system-ui;
 
 }
-#play:hover,#inst:hover ,#again:hover{
+#play:hover, #again:hover{
   transform: scale(1.1);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
 #selection{
-  font-size: 64px;
+  font-size: 94px;
+  font-family: 'Lemon/Milk';
 }
 #message{
   font-family: 'Press Start 2P', system-ui;
@@ -155,6 +148,13 @@ h1 {
     font-size: 84px;
   }
 }
+
+
+
+
+
+
+
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
