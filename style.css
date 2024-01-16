@@ -14,10 +14,7 @@ body {
   color: white;
   height: 100vh;
   font-family: Product Sans;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   background-repeat: no-repeat;
   background-image: url("overlay.png");
   overflow-x: hidden;
