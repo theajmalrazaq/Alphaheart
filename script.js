@@ -10,6 +10,7 @@ const select = {
   message: document.getElementById("message"),
   again: document.getElementById("again"),
   gametablebtns: document.getElementById("gametablebtns"),
+  logo: document.getElementById("logo"),
 }
 let score = 9;
 let win = false;
@@ -20,6 +21,7 @@ let hiscore =0;
 select.play.addEventListener("click",()=>{
 select.menu.style.display="none";
 select.gametable.style.display="";
+select.logo.style.display="none";
 select.scoreboard.style.display="";
 });
 
