@@ -1,3 +1,5 @@
+
+// slection of different elements 
 const select = {
   menu: document.getElementById("menu"),
   gametable: document.getElementById("gametable"),
@@ -13,11 +15,14 @@ const select = {
   logo: document.getElementById("logo"),
 }
 
+// default veriables 
+
 let score = 9;
-let win = false;
 let guess = Math.floor(Math.random()*9);
 let usrchoice = 0;
 let hiscore =0;
+
+// play button on homescrean function 
 
 select.play.addEventListener("click",()=>{
 select.menu.style.display="none";
@@ -25,6 +30,8 @@ select.gametable.style.display="";
 select.logo.style.display="none";
 select.scoreboard.style.display="";
 });
+
+// function to check user choice 
 
 function clickcheck(btnnum,choice)
 {

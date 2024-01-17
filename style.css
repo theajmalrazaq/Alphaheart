@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,16 +13,17 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-image: url("overlay.png");
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-header {
-  color: white;
+.column{
   display: flex;
   flex-direction: column;
   align-items: center;
- gap: 30px;
+}
+header {
+  color: white;
+  gap: 50px;
   margin-top: 80px;
 }
 h1{
@@ -30,12 +33,6 @@ h1{
   font-weight: 100;
 }
 
-#lower{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .dlogo{
   height: 100px;
 }
@@ -43,11 +40,8 @@ h1{
   gap: 10px;
   margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 70px 40px;
   height: 320px;
-  align-items: center;
   border-radius: 16px;
 }
 #gametable{
@@ -56,14 +50,9 @@ h1{
  height: 320px;
  border-radius: 16px;
  margin-top: 30px;
- flex-direction: column;
- justify-content:center;
  gap: 20px;
- align-items: center;
 }
 #gametablebtns{
-  display: flex;
-  flex-direction: column;
   border-radius: 9px;
   gap: 20px;
 }
@@ -88,6 +77,10 @@ li:hover{
   margin-top: 30px;
   display: flex;
   gap: 20px;
+  background-color: rgba(255, 255, 255, .1);
+  padding: 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
 }
 #score,#hiscore{
   color: #ffffff;
@@ -126,6 +119,7 @@ li:hover{
 #selection{
   font-size: 94px;
   font-family: 'Lemon/Milk';
+  border-radius: 4px;
 }
 #message{
   font-family: 'Press Start 2P', system-ui;
