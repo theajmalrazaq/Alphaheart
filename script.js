@@ -20,14 +20,12 @@ const select = {
 
 let score = 9;
 let guess = Math.floor(Math.random() * 9);
-let usrchoice = 0;
 let hiscore = 0;
-var usern;
 
 // play button on homescrean function
 
 select.play.addEventListener("click", () => {
-  if (select.inputname.value == "") {
+  if (select.inputname.value === "") {
     alert("Please Enter Your Name");
   } else {
     select.menu.style.display = "none";
@@ -40,7 +38,7 @@ select.play.addEventListener("click", () => {
 // function to check user choice
 
 function clickcheck(btnnum, choice) {
-  if (btnnum != guess) {
+  if (btnnum !== guess) {
     score--;
     select.score.innerHTML = "Score: " + score;
     select.selection.innerHTML = choice;
@@ -55,7 +53,7 @@ function clickcheck(btnnum, choice) {
     }
     select.hiscore.innerHTML = "HiScore: " + hiscore;
   }
-  if (score == 0) {
+  if (score === 0) {
     select.message.innerHTML = `You Lost! ${select.inputname.value}`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
