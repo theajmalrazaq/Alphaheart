@@ -49,7 +49,6 @@ body {
 
 .tagline {
   font-family: lemonMilkMedium;
-  font-size: 12px;
 }
 .column {
   display: flex;
@@ -161,10 +160,16 @@ h1 {
   h1 {
     font-size: 48px;
   }
+  .tagline {
+    font-size: 9px;
+  }
 }
 @media (min-width: 1024px) {
   h1 {
     font-size: 84px;
+  }
+  .tagline {
+    font-size: 12px;
   }
 }
 
