@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("Images/Ellipse\ 1.png");
   overflow: hidden;
+  background-position: center;
 }
 
 .inputname {
@@ -49,6 +50,7 @@ body {
 
 .tagline {
   font-family: lemonMilkMedium;
+  font-size: 8px;
 }
 .column {
   display: flex;
@@ -156,12 +158,13 @@ li:hover {
 h1 {
   font-size: 32px;
 }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 48px;
   }
   .tagline {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1024px) {
