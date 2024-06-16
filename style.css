@@ -100,8 +100,6 @@ a:hover {
 
 #gametable {
   display: flex;
-  padding: 10px;
-  height: 320px;
   border-radius: 16px;
   gap: 20px;
 }
@@ -177,10 +175,10 @@ h1 {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 84px;
+    font-size: 64px;
   }
   .tagline {
-    font-size: 14px;
+    font-size: 12px;
   }
   #message {
     font-size: 12px;
