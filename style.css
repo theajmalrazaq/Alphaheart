@@ -23,14 +23,18 @@
   margin: 0;
   padding: 0;
 }
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  z-index: -12;
+}
 body {
   background: var(--tertiary);
   color: var(--secondary);
   height: 100vh;
-  background-repeat: no-repeat;
-  background-image: url("Images/Ellipse\ 1.png");
-  overflow: hidden;
-  background-position: bottom;
 }
 
 #inputname {
