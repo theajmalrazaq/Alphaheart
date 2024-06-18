@@ -11,7 +11,7 @@ const select = {
   message: document.getElementById("message"),
   again: document.getElementById("again"),
   gametablebtns: document.getElementById("gametablebtns"),
-  inputname: document.querySelector(".inputname"),
+  inputname: document.getElementById("inputname"),
   victory: document.getElementById("victory").innerHTML,
   losticon: document.getElementById("losticon").innerHTML,
 };

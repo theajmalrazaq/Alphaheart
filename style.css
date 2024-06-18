@@ -33,7 +33,7 @@ body {
   background-position: bottom;
 }
 
-.inputname {
+#inputname {
   background-color: var(--background-secondary);
   border: none;
   color: var(--secondary);
@@ -42,10 +42,10 @@ body {
   font-family: lemonMilkMedium;
   font-size: 9px;
 }
-.inputname:focus {
+#inputname:focus {
   outline: none;
 }
-.inputname::placeholder {
+#inputname::placeholder {
   color: var(--secondary);
   text-align: center;
 }
@@ -59,7 +59,7 @@ header {
   color: var(--secondary);
   margin-top: 80px;
 }
-/* h1 {
+h1 {
   color: var(--secondary);
   font-family: lemonMilkBold;
   font-size: 30px;
@@ -67,7 +67,7 @@ header {
 h1 span {
   font-family: lemonMilkRegular;
   color: var(--primary);
-} */
+}
 #again {
   margin-top: 10px;
   background: var(--background-secondary);
