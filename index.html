@@ -1,168 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AlphaHeart</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="column">
-      <h1 class="text-focus-in">Alpha<span>Heart</span></h1>
-      <p class="tagline">
-        A simple heart colour guessing game crafted using HTML,CSS and JS
-      </p>
-    </header>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="column">
+    <h1 class="text-focus-in">Alpha<span>Heart</span></h1>
 
-    <section id="lower" class="column">
-      <!-- Menu  -->
-      <div id="menu" class="column">
+</header>
+
+<section id="lower" class="column">
+    <!-- Menu  -->
+    <div id="menu" class="column">
         <input
-          type="text"
-          class="inputname"
-          placeholder="Enter Your Name Buddy!!"
-       />
+                type="text"
+                class="inputname"
+                placeholder="Enter Your Name Buddy!!"
+        />
         <button id="play">
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            width="104"
-            height="104"
-            fill="none"
-          >
-            <style>
-              @keyframes loader15 {
-                0% {
-                  transform: scale(0.2);
-                  opacity: 0.8;
-                }
-                80% {
-                  transform: scale(1.2);
-                  opacity: 0;
-                }
-                to {
-                  transform: scale(2.2);
-                  opacity: 0;
-                }
-              }
-            </style>
-            <circle
-              cx="12"
-              cy="12"
-              r="6"
-              fill="white"
-              style="
+            <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="104"
+                    height="104"
+                    fill="none"
+            >
+                <style>
+                    @keyframes loader15 {
+                        0% {
+                            transform: scale(0.2);
+                            opacity: 0.8;
+                        }
+                        80% {
+                            transform: scale(1.2);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: scale(2.2);
+                            opacity: 0;
+                        }
+                    }
+                </style>
+                <circle
+                        cx="12"
+                        cy="12"
+                        r="6"
+                        fill="white"
+                        style="
                 animation: loader15 1.5s cubic-bezier(0.165, 0.84, 0.44, 1)
                   infinite both;
                 transform-origin: center center;
               "
-            />
-            <path
-              fill="#FF0E0E"
-              fill-rule="evenodd"
-              d="M13.41 11.591a.5.5 0 010 .817l-1.73 1.222a.5.5 0 01-.788-.409v-2.442a.5.5 0 01.789-.409l1.729 1.222z"
-              clip-rule="evenodd"
-            />
-          </svg>
+                />
+                <path
+                        fill="#FF0E0E"
+                        fill-rule="evenodd"
+                        d="M13.41 11.591a.5.5 0 010 .817l-1.73 1.222a.5.5 0 01-.788-.409v-2.442a.5.5 0 01.789-.409l1.729 1.222z"
+                        clip-rule="evenodd"
+                />
+            </svg>
         </button>
-      </div>
+    </div>
 
-      <!-- Score Board  -->
+    <!-- Score Board  -->
 
-      <div id="scoresec" style="display: none">
+    <div id="scoresec" style="display: none">
         <p id="hiscore">HiScore: 0</p>
         <p id="score">Score: 9</p>
-      </div>
+    </div>
 
-      <!-- Game Table  -->
-      <span id="victory" style="display: none">
+    <!-- Game Table  -->
+    <span id="victory" style="display: none">
         <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          width="80"
-          height="80"
-          fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                fill="none"
         >
           <style>
             @keyframes confetti {
-              0%,
-              50%,
-              60% {
-                opacity: 0;
-              }
-              to {
-                opacity: 1;
-              }
+                0%,
+                50%,
+                60% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
             }
+
             @keyframes confetti-prop {
-              0% {
-                transform: translateY(0) translateX(0);
-              }
-              to {
-                transform: translateY(-0.5px) translateX(0.5px);
-              }
+                0% {
+                    transform: translateY(0) translateX(0);
+                }
+                to {
+                    transform: translateY(-0.5px) translateX(0.5px);
+                }
             }
           </style>
           <path
-            fill="white"
-            d="M15.459 14.163l-.471.471.47-.471zm-.38 1.972l-.263-.613.263.613zm-5.918-5.919l-.613-.262.613.262zm1.971-.38l.472-.47-.472.47zm-5.216 7.951l.612.263-.612-.263zm1.592 1.592l.262.613-.262-.613zm-.98-1.33l3.245-7.57-1.225-.525-3.245 7.57 1.225.526zm4.133-7.741l4.327 4.326.942-.943-4.326-4.326-.943.943zm4.155 5.214l-7.57 3.245.524 1.225 7.572-3.245-.526-1.225zm.171-.888a.546.546 0 01-.17.888l.524 1.225a1.879 1.879 0 00.589-3.056l-.942.943zm-5.214-4.155a.546.546 0 01.888-.171l.943-.943a1.879 1.879 0 00-3.056.589l1.225.525zm-4.47 7.046c-.668 1.559.909 3.135 2.467 2.467l-.525-1.225a.546.546 0 01-.717-.717l-1.225-.525z"
-            style="
+                  fill="white"
+                  d="M15.459 14.163l-.471.471.47-.471zm-.38 1.972l-.263-.613.263.613zm-5.918-5.919l-.613-.262.613.262zm1.971-.38l.472-.47-.472.47zm-5.216 7.951l.612.263-.612-.263zm1.592 1.592l.262.613-.262-.613zm-.98-1.33l3.245-7.57-1.225-.525-3.245 7.57 1.225.526zm4.133-7.741l4.327 4.326.942-.943-4.326-4.326-.943.943zm4.155 5.214l-7.57 3.245.524 1.225 7.572-3.245-.526-1.225zm.171-.888a.546.546 0 01-.17.888l.524 1.225a1.879 1.879 0 00.589-3.056l-.942.943zm-5.214-4.155a.546.546 0 01.888-.171l.943-.943a1.879 1.879 0 00-3.056.589l1.225.525zm-4.47 7.046c-.668 1.559.909 3.135 2.467 2.467l-.525-1.225a.546.546 0 01-.717-.717l-1.225-.525z"
+                  style="
               animation: confetti-prop 1.5s cubic-bezier(1, -0.49, 0.02, 1.07)
                 infinite both;
             "
           />
           <g
-            style="
+                  style="
               animation: confetti 1.5s cubic-bezier(0.85, 0.11, 0.01, 0.88)
                 infinite both;
             "
-            fill="#FF0E0E"
+                  fill="#FF0E0E"
           >
-            <circle cx="13.505" cy="7.146" r=".666" />
-            <circle cx="18.17" cy="7.298" r=".333" />
+            <circle cx="13.505" cy="7.146" r=".666"/>
+            <circle cx="18.17" cy="7.298" r=".333"/>
             <path
-              d="M18.17 11.277l1.09-.768.768 1.089-1.09.768zM15.52 9.83l.45-.317.32.45-.452.319zm-.399-3.894l.544-.384.384.544-.544.384z"
+                    d="M18.17 11.277l1.09-.768.768 1.089-1.09.768zM15.52 9.83l.45-.317.32.45-.452.319zm-.399-3.894l.544-.384.384.544-.544.384z"
             />
             <path
-              fill-rule="evenodd"
-              d="M17.17 4.814c.185 0 .334.15.334.333v.545c0 .57-.133 1.132-.387 1.642-.237.472-.62.855-1.092 1.091l-.277.139a1.1 1.1 0 00-.492.492l-.453.905a.333.333 0 11-.596-.298l.453-.905c.17-.342.448-.62.79-.79l.277-.139c.343-.172.622-.45.793-.793.209-.417.318-.877.318-1.344v-.545c0-.184.149-.333.333-.333zm-.332 7.816a.333.333 0 01-.334-.334v-.545c0-.57.133-1.131.388-1.64a2.44 2.44 0 011.091-1.092l.277-.139a1.1 1.1 0 00.492-.492l.453-.905a.333.333 0 11.596.298l-.452.905c-.171.342-.449.62-.79.79l-.278.139c-.343.171-.621.45-.793.793a3.003 3.003 0 00-.317 1.343v.546c0 .183-.15.333-.333.333z"
-              clip-rule="evenodd"
+                    fill-rule="evenodd"
+                    d="M17.17 4.814c.185 0 .334.15.334.333v.545c0 .57-.133 1.132-.387 1.642-.237.472-.62.855-1.092 1.091l-.277.139a1.1 1.1 0 00-.492.492l-.453.905a.333.333 0 11-.596-.298l.453-.905c.17-.342.448-.62.79-.79l.277-.139c.343-.172.622-.45.793-.793.209-.417.318-.877.318-1.344v-.545c0-.184.149-.333.333-.333zm-.332 7.816a.333.333 0 01-.334-.334v-.545c0-.57.133-1.131.388-1.64a2.44 2.44 0 011.091-1.092l.277-.139a1.1 1.1 0 00.492-.492l.453-.905a.333.333 0 11.596.298l-.452.905c-.171.342-.449.62-.79.79l-.278.139c-.343.171-.621.45-.793.793a3.003 3.003 0 00-.317 1.343v.546c0 .183-.15.333-.333.333z"
+                    clip-rule="evenodd"
             />
           </g>
         </svg>
       </span>
-      <span id="losticon" style="display: none">
+    <span id="losticon" style="display: none">
         <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          width="90"
-          height="90"
-          fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="90"
+                fill="none"
         >
           <style>
             @keyframes sad {
-              0% {
-                stroke-dashoffset: 0;
-              }
-              to {
-                stroke-dashoffset: 200;
-              }
+                0% {
+                    stroke-dashoffset: 0;
+                }
+                to {
+                    stroke-dashoffset: 200;
+                }
             }
           </style>
-          <circle cx="12" cy="12" r="7" stroke="white" stroke-width="1.5" />
-          <circle cx="9" cy="10.277" r="1" fill="white" />
-          <circle cx="15" cy="10.277" r="1" fill="white" />
+          <circle cx="12" cy="12" r="7" stroke="white" stroke-width="1.5"/>
+          <circle cx="9" cy="10.277" r="1" fill="white"/>
+          <circle cx="15" cy="10.277" r="1" fill="white"/>
           <path
-            stroke="#FF0E0E"
-            stroke-linecap="round"
-            d="M15 15.25l-.049-.04A4.631 4.631 0 009 15.25"
-            style="animation: sad 4s infinite linear"
-            stroke-dasharray="100"
+                  stroke="#FF0E0E"
+                  stroke-linecap="round"
+                  d="M15 15.25l-.049-.04A4.631 4.631 0 009 15.25"
+                  style="animation: sad 4s infinite linear"
+                  stroke-dasharray="100"
           />
         </svg>
       </span>
-      <div id="gametable" style="display: none" class="column">
+    <div id="gametable" style="display: none" class="column">
         <p id="selection">?</p>
         <p id="message"></p>
 
@@ -173,32 +172,32 @@
         <!-- heart buttons  -->
 
         <div id="gametablebtns" class="column">
-          <ul>
-            <li onclick="clickcheck(0,'💚')">💚</li>
-            <li onclick="clickcheck(1,'💙')">💙</li>
-            <li onclick="clickcheck(2,'🤎')">🤎</li>
-          </ul>
-          <ul>
-            <li onclick="clickcheck(3,'❤️')">❤️</li>
-            <li onclick="clickcheck(4,'🧡')">🧡</li>
-            <li onclick="clickcheck(5,'💛')">💛</li>
-          </ul>
-          <ul>
-            <li onclick="clickcheck(6,'💜')">💜</li>
-            <li onclick="clickcheck(7,'🖤')">🖤</li>
-            <li onclick="clickcheck(8,'🤍')">🤍</li>
-          </ul>
+            <ul>
+                <li onclick="clickcheck(0,'💚')">💚</li>
+                <li onclick="clickcheck(1,'💙')">💙</li>
+                <li onclick="clickcheck(2,'🤎')">🤎</li>
+            </ul>
+            <ul>
+                <li onclick="clickcheck(3,'❤️')">❤️</li>
+                <li onclick="clickcheck(4,'🧡')">🧡</li>
+                <li onclick="clickcheck(5,'💛')">💛</li>
+            </ul>
+            <ul>
+                <li onclick="clickcheck(6,'💜')">💜</li>
+                <li onclick="clickcheck(7,'🖤')">🖤</li>
+                <li onclick="clickcheck(8,'🤍')">🤍</li>
+            </ul>
         </div>
-      </div>
-    </section>
-    <footer>
-      <p>
+    </div>
+</section>
+<footer>
+    <p>
         Made With 🫶 By
         <a href="https://github.com/theajmalrazaq" target="_blank"
-          >Ajmal Razaq Bhatti</a
+        >Ajmal Razaq Bhatti</a
         >
-      </p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>

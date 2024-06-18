@@ -48,10 +48,7 @@ body {
   text-align: center;
 }
 
-.tagline {
-  font-family: lemonMilkMedium;
-  font-size: 10px;
-}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -169,16 +166,10 @@ h1 {
   h1 {
     font-size: 48px;
   }
-  .tagline {
-    font-size: 12px;
-  }
 }
 @media (min-width: 1024px) {
   h1 {
     font-size: 64px;
-  }
-  .tagline {
-    font-size: 12px;
   }
   #message {
     font-size: 12px;
