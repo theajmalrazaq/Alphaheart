@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("Images/Ellipse\ 1.png");
   overflow: hidden;
-  background-position: center;
+  background-position: bottom;
 }
 
 .inputname {
@@ -47,7 +47,6 @@ body {
   color: var(--secondary);
   text-align: center;
 }
-
 
 .column {
   display: flex;
@@ -80,7 +79,7 @@ h1 span {
 }
 
 #menu {
-  gap: 10px;
+  gap: 6px;
   margin-top: 50px;
   display: flex;
   padding: 70px 40px;
@@ -98,7 +97,7 @@ a:hover {
 #gametable {
   display: flex;
   border-radius: 16px;
-  gap: 20px;
+  gap: 10px;
 }
 #gametablebtns {
   border-radius: 9px;
@@ -107,7 +106,7 @@ a:hover {
 ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
 }
 li {
   background-color: var(--background-secondary);
