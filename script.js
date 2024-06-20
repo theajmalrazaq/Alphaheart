@@ -45,7 +45,7 @@ function clickcheck(btnnum, choice) {
     select.message.innerHTML = "Wrong Guess!";
   } else {
     select.selection.innerHTML = select.victory;
-    select.message.innerHTML = `Congratulations! ${select.inputname.value} You won (or did you?).`;
+    select.message.innerHTML = `wow, you won!! ${select.inputname.value}`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
     if (score > hiscore) {
