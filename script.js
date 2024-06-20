@@ -42,10 +42,10 @@ function clickcheck(btnnum, choice) {
     score--;
     select.score.innerHTML = "Score: " + score;
     select.selection.innerHTML = choice;
-    select.message.innerHTML = "Wrong Guess Try Again";
+    select.message.innerHTML = "Wrong Guess!";
   } else {
     select.selection.innerHTML = select.victory;
-    select.message.innerHTML = `You Won! ${select.inputname.value}`;
+    select.message.innerHTML = `Congratulations! ${select.inputname.value} <br> You won (or did you?).`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
     if (score > hiscore) {
@@ -54,7 +54,7 @@ function clickcheck(btnnum, choice) {
     select.hiscore.innerHTML = "HiScore: " + hiscore;
   }
   if (score === 0) {
-    select.message.innerHTML = `You Lost! ${select.inputname.value}`;
+    select.message.innerHTML = `Oh no, you lost ${select.inputname.value}`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
     select.selection.innerHTML = select.losticon;
