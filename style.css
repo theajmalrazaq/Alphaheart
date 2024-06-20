@@ -47,14 +47,13 @@ body {
   padding: 5px;
   border-radius: 8px;
   font-family: lemonMilkMedium;
-  font-size: 9px;
+  font-size: 10px;
 }
 #inputname:focus {
   outline: none;
 }
 #inputname::placeholder {
   color: var(--secondary);
-  text-align: center;
 }
 
 .column {
@@ -79,7 +78,7 @@ h1 span {
   margin-top: 10px;
   background: var(--background-secondary);
   border: none;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--primary);
   border-radius: 12px;
   padding: 12px 23px;
