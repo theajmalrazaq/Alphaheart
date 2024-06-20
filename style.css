@@ -54,6 +54,7 @@ body {
 }
 #inputname::placeholder {
   color: var(--secondary);
+  text-align: center;
 }
 
 .column {
