@@ -77,7 +77,6 @@ h1 span {
 }
 .endbtns {
   display: flex;
-  margin: 30px;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
