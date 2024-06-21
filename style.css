@@ -75,14 +75,23 @@ h1 span {
   font-family: lemonMilkRegular;
   color: var(--primary);
 }
-#again {
+.endbtns {
+  display: flex;
+  margin: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#again,
+#exit {
   margin-top: 10px;
   background: var(--background-secondary);
   border: none;
   font-size: 12px;
   color: var(--primary);
   border-radius: 12px;
-  padding: 12px 23px;
+  height: 43px;
+  width: 142px;
   cursor: pointer;
   font-family: "lemonMilkMedium";
 }
@@ -155,7 +164,8 @@ li:hover {
   border: none;
 }
 #play:hover,
-#again:hover {
+#again:hover,
+#exit:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
