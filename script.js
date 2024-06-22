@@ -10,7 +10,6 @@ const select = {
   selection: document.getElementById("selection"),
   message: document.getElementById("message"),
   again: document.getElementById("again"),
-  exit: document.getElementById("exit"),
   gametablebtns: document.getElementById("gametablebtns"),
   inputname: document.getElementById("inputname"),
   victory: document.getElementById("victory").innerHTML,
@@ -49,7 +48,6 @@ function clickcheck(btnnum, choice) {
     select.message.innerHTML = `wow, you won!! ${select.inputname.value}`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
-    select.exit.style.display = "";
     if (score > hiscore) {
       hiscore = score;
     }
@@ -59,22 +57,15 @@ function clickcheck(btnnum, choice) {
     select.message.innerHTML = `Oh no, you lost ${select.inputname.value}`;
     select.gametablebtns.style.display = "none";
     select.again.style.display = "";
-    select.exit.style.display = "";
     select.selection.innerHTML = select.losticon;
   }
 }
 select.again.addEventListener("click", () => {
   select.gametablebtns.style.display = "";
   select.again.style.display = "none";
-  select.exit.style.display = "none";
   select.message.innerHTML = "Guess The Heart";
   select.selection.innerHTML = "?";
   score = 9;
   select.score.innerHTML = "Score: " + score;
   guess = Math.floor(Math.random() * 9);
-});
-select.exit.addEventListener("click", () => {
-  if (confirm("Exit Game?")) {
-    window.close();
-  }
 });
